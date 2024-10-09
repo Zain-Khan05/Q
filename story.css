@@ -1,0 +1,101 @@
+body {
+    font-family: 'Merriweather', serif; /* Elegant, old-fashioned look */
+    background-color: #3b2f2f; /* Darker, moody background */
+    color: #f5f5dc; /* Light beige text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #4B2E1F; /* Deep brown tone for ancient or mystical vibe */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Shadow for depth */
+    margin: 20px;
+}
+
+#story-container {
+    background-color: #4b2e1f;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+#story {
+    font-size: 28px; /* Larger for emphasis */
+    margin-bottom: 25px;
+    color: #ffdab9; /* Lighter peach for the title */
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#question {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #f5f5dc; /* Maintain light beige text */
+}
+
+.option {
+    background-color: #6a4f34; /* Softer brown color */
+    color: #f5f5dc;
+    border: none;
+    padding: 12px 24px;
+    margin: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+}
+
+.option:hover {
+    background-color: #8A6D45; /* Lighter brown on hover */
+    transform: scale(1.1); /* Subtle growth on hover */
+}
+
+.option:disabled {
+    background-color: #7d5a43;
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+    #story {
+        font-size: 24px;
+    }
+
+    .option {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    #story-container {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #story {
+        font-size: 22px;
+    }
+
+    .option {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #story-container {
+        padding: 20px;
+    }
+}
